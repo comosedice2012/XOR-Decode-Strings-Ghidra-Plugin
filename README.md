@@ -17,7 +17,7 @@ Function *sub_10001210* allocates memory for the deobfuscated string using *Loca
 
 Finally, the pointer to the allocated memory that contains the deobfucated string is returned and assigned to a global variable. The default behavior for this plugin is to add the deobfuscated string value as a comment next to this assignment.
 
-![Deobfuscated](https://user-images.githubusercontent.com/1920756/102287873-f4877500-3f00-11eb-8f20-19d2826e4414.png)
+![postDeobf](https://user-images.githubusercontent.com/69214982/117378523-7bc28e80-ae8a-11eb-8f26-89c4814f4bf3.png)
 
 
 ## Note

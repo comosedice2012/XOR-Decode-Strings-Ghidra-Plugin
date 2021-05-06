@@ -9,7 +9,7 @@ Analysis on YouTube: [https://youtu.be/un8I6dfuDVQ](https://youtu.be/un8I6dfuDVQ
 
 Below is a sample of the obfsucated string pattern. The function called to deobfucate the strings is *sub_10001210* and takes three arguments - the size of the string to decode, the key and obfuscated string (in that order).
 
-![Obfuscated strings](https://user-images.githubusercontent.com/1920756/102287860-efc2c100-3f00-11eb-9ea0-4ddc8681d74e.png)
+![pre_deobf](https://user-images.githubusercontent.com/69214982/117378054-829cd180-ae89-11eb-9180-9a817cd3e28a.png)
 
 Function *sub_10001210* allocates memory for the deobfuscated string using *LocallAloc* and a loop. The loop takes each letter of the key and XORs with the obfuscated string. If the string is longer than the key, it uses modulo division to repeat back over the key and continue until the string is full deobfuscated.
 

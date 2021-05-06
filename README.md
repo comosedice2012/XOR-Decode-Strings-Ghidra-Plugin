@@ -1,4 +1,4 @@
-# Simple IDA Python Plugin to Decode XOR-Obfuscated Strings
+# Simple Ghidra Python Plugin to Decode XOR-Obfuscated Strings
 
 This plugin was inspired by a recent XLS document that drops and executes a DLL using RUNDLL32. The DLL is small and only used to download the next stage. However, it employs rather straight-forward string obfuscation using the bitwise XOR operation. An important skill for any reverse engineer/malware analyst is to be able to create plugins to assist in statically decoding these strings and doing so across the entire disassembly database. This plugin is intended to get you started creating IDA Plugins with Python, recognize the importance of deobfuscating strings and work on translating assembly to a higher-level language (i.e. Python).
 

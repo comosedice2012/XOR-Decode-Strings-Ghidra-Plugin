@@ -11,9 +11,9 @@ Below is a sample of the obfsucated string pattern. The function called to deobf
 
 ![pre_deobf](https://user-images.githubusercontent.com/69214982/117378054-829cd180-ae89-11eb-9180-9a817cd3e28a.png)
 
-Function *sub_10001210* allocates memory for the deobfuscated string using *LocallAloc* and a loop. The loop takes each letter of the key and XORs with the obfuscated string. If the string is longer than the key, it uses modulo division to repeat back over the key and continue until the string is full deobfuscated.
+Function *FUN_10001210* allocates memory for the deobfuscated string using *LocallAloc* and a loop. The loop takes each letter of the key and XORs with the obfuscated string. If the string is longer than the key, it uses modulo division to repeat back over the key and continue until the string is fully deobfuscated.
 
-![XOR Loop](https://user-images.githubusercontent.com/1920756/102287869-f3564800-3f00-11eb-8279-238599616fbb.png)
+![ghidraLoopGraph](https://user-images.githubusercontent.com/69214982/118728926-d395b980-b7e9-11eb-9981-cdbfc4c4f5b4.png)
 
 Finally, the pointer to the allocated memory that contains the deobfucated string is returned and assigned to a global variable. The default behavior for this plugin is to add the deobfuscated string value as a comment next to this assignment.
 
